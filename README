@@ -13,3 +13,6 @@ In Admin create a Content block and give it a codename, e.g 'myprettyblock'
 In your template:
 {% load contentblock_tags %}
 {% contentblock 'myprettyblock' %}
+
+
+http://github.com/divio/django-contentblock/

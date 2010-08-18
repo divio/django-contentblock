@@ -22,7 +22,7 @@ class Migration(SchemaMigration):
 
         # Adding model 'ContentBlock'
         db.create_table('contentblock_contentblock', (
-            ('code', self.gf('django.db.models.fields.CharField')(unique=True, max_length=16, primary_key=True, db_index=True)),
+            ('code', self.gf('django.db.models.fields.CharField')(unique=True, max_length=255, primary_key=True, db_index=True)),
             ('name', self.gf('django.db.models.fields.CharField')(default='', max_length=255, blank=True)),
         ))
         db.send_create_signal('contentblock', ['ContentBlock'])
@@ -49,7 +49,7 @@ class Migration(SchemaMigration):
         },
         'contentblock.contentblock': {
             'Meta': {'object_name': 'ContentBlock'},
-            'code': ('django.db.models.fields.CharField', [], {'unique': 'True', 'max_length': '16', 'primary_key': 'True', 'db_index': 'True'}),
+            'code': ('django.db.models.fields.CharField', [], {'unique': 'True', 'max_length': '255', 'primary_key': 'True', 'db_index': 'True'}),
             'name': ('django.db.models.fields.CharField', [], {'default': "''", 'max_length': '255', 'blank': 'True'})
         },
         'contentblock.contentblocktranslation': {
