@@ -1,0 +1,3 @@
+include metadata.py
+include README
+recursive-include contentblock/locale *

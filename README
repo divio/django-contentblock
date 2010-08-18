@@ -1,0 +1,15 @@
+A simple app that allows using Multilingual contentblock using Placeholders from django-cms
+
+Installation:
+pip install django-contentblock
+dependencies: django-cms, django-multilingual-ng
+
+Setup:
+add 'contentblock' to INSTALLED_APPS
+
+Usage:
+In Admin create a Content block and give it a codename, e.g 'myprettyblock'
+
+In your template:
+{% load contentblock_tags %}
+{% contentblock 'myprettyblock' %}
