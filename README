@@ -1,3 +1,8 @@
+Note: this app is no longer needed for django CMS 3. The same functionality is available
+with static placeholders:
+
+http://django-cms.readthedocs.org/en/latest/introduction/templates_placeholders.html#static-placeholders
+
 A simple app that allows using Multilingual contentblock using Placeholders from django-cms
 
 Installation:
